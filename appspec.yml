@@ -10,3 +10,6 @@ hooks:
     - location: scripts/start_container.sh
       timeout: 300
       runas: root
+
+      version: 0.0
+os: linux
