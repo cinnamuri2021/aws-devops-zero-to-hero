@@ -2,4 +2,5 @@
 set -e
 
 # Stop the running container (if any)
-echo "Hi"
+containerid=$(sudo docker ps --format "{{.ID}}" | head -n 1)
+docker rm -f $containerid
